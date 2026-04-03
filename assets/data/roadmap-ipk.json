@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "title": "Langkah IPII — Jalur IPK",
+    "description": "Roadmap untuk mahasiswa fokus pada prestasi akademik tinggi",
+    "path": "ipk",
+    "version": "1.0"
+  },
+  "semesters": [
+    {
+      "id": "sem-1",
+      "label": "Semester 1",
+      "period": "Agus – Jan",
+      "description": "Orientasi & adaptasi kehidupan kampus",
+      "dotType": "default",
+      "nodes": [
+        {
+          "id": "n-template-1",
+          "icon": "📝",
+          "title": "TODO: Isi judul node",
+          "desc": "TODO: Isi deskripsi singkat",
+          "action": "TODO: Isi saran aksi",
+          "resources": [],
+          "type": "core",
+          "tags": ["TODO"],
+          "paths": ["ipk"]
+        }
+      ]
+    },
+    {
+      "id": "sem-2",
+      "label": "Semester 2",
+      "period": "Feb – Jul",
+      "description": "TODO: Isi deskripsi semester",
+      "dotType": "default",
+      "nodes": [
+        {
+          "id": "n-template-2",
+          "icon": "📝",
+          "title": "TODO: Isi judul node",
+          "desc": "TODO: Isi deskripsi singkat",
+          "action": "TODO: Isi saran aksi",
+          "resources": [],
+          "type": "core",
+          "tags": ["TODO"],
+          "paths": ["ipk"]
+        }
+      ]
+    }
+  ]
+}

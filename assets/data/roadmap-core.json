@@ -1,0 +1,370 @@
+{
+  "meta": {
+    "title": "Langkah IPII",
+    "description": "Roadmap akademik mahasiswa Ilmu Perpustakaan dan Informasi Islam",
+    "version": "1.0",
+    "updated": "2025"
+  },
+  "semesters": [
+    {
+      "id": "sem-1",
+      "label": "Semester 1",
+      "period": "Agus – Jan",
+      "description": "Orientasi & adaptasi kehidupan kampus",
+      "dotType": "default",
+      "nodes": [
+        {
+          "id": "n-pkkmb",
+          "icon": "🏫",
+          "title": "PKKMB & Orientasi Kampus",
+          "desc": "Kenali lingkungan, sistem akademik, dan hak-hak mahasiswa",
+          "type": "core",
+          "tags": ["Wajib"],
+          "paths": ["all"]
+        },
+        {
+          "id": "n-habit",
+          "icon": "📅",
+          "title": "Bangun Rutinitas Belajar",
+          "desc": "Metode membaca ilmiah, manajemen waktu semester pertama",
+          "type": "core",
+          "tags": ["Soft skill"],
+          "paths": ["all"]
+        },
+        {
+          "id": "n-kenalan",
+          "icon": "🤝",
+          "title": "Jalin Relasi Awal",
+          "desc": "Kenal dosen wali, teman angkatan, & senior",
+          "type": "optional",
+          "tags": ["Networking"],
+          "paths": ["all"]
+        },
+        {
+          "id": "n-matkul1",
+          "icon": "📚",
+          "title": "Fokus Matkul Fondasi",
+          "desc": "Pengantar Ilmu Perpustakaan, Dasar-dasar Informasi",
+          "type": "core",
+          "tags": ["Akademik"],
+          "paths": ["all"]
+        }
+      ]
+    },
+    {
+      "id": "sem-2",
+      "label": "Semester 2",
+      "period": "Feb – Jul",
+      "description": "Mulai mendalami core IPII & eksplorasi minat",
+      "dotType": "default",
+      "nodes": [
+        {
+          "id": "n-katalog",
+          "icon": "🗂",
+          "title": "Katalogisasi & Klasifikasi",
+          "desc": "Kuasai DDC, RDA, MARC — fondasi utama profesi pustakawan",
+          "type": "core",
+          "tags": ["Core IPII"],
+          "paths": ["all"]
+        },
+        {
+          "id": "n-ukm",
+          "icon": "🏛",
+          "title": "Daftar UKM / HMJ",
+          "desc": "Mulai aktif di organisasi mahasiswa atau unit kegiatan",
+          "type": "optional",
+          "tags": ["Opsional"],
+          "paths": ["organisatoris"]
+        },
+        {
+          "id": "n-mentor",
+          "icon": "💬",
+          "title": "Cari Mentor / Senior",
+          "desc": "Hubungi senior yang sudah lulus atau semester atas",
+          "type": "optional",
+          "tags": ["Networking"],
+          "paths": ["sempro", "target35"]
+        },
+        {
+          "id": "n-ipk-awal",
+          "icon": "📊",
+          "title": "Target IPK Semester 2",
+          "desc": "Pasang target IPK kumulatif ≥ 3.50 sejak dini",
+          "type": "optional",
+          "tags": ["IPK"],
+          "paths": ["ipk", "target35"]
+        }
+      ]
+    },
+    {
+      "id": "sem-3",
+      "label": "Semester 3",
+      "period": "Agus – Jan",
+      "description": "Titik percabangan — tentukan jalurmu",
+      "dotType": "milestone",
+      "nodes": [
+        {
+          "id": "n-pilih-jalur",
+          "icon": "🧭",
+          "title": "Pilih Jalur Spesialisasi",
+          "desc": "Ini titik kritis. Tentukan apakah kamu fokus IPK, organisasi, atau lulus cepat",
+          "type": "milestone",
+          "tags": ["Kritis"],
+          "paths": ["all"]
+        },
+        {
+          "id": "n-tema-skripsi",
+          "icon": "🔍",
+          "title": "Eksplorasi Tema Skripsi",
+          "desc": "Mulai baca jurnal, temukan ketertarikan riset lebih awal",
+          "type": "optional",
+          "tags": ["Riset"],
+          "paths": ["sempro", "target35", "ipk"]
+        },
+        {
+          "id": "n-kepanitian",
+          "icon": "📋",
+          "title": "Masuk Kepanitiaan / Kabinet",
+          "desc": "Ambil peran di struktur organisasi kampus",
+          "type": "optional",
+          "tags": ["Leadership"],
+          "paths": ["organisatoris"]
+        },
+        {
+          "id": "n-kkl-prep",
+          "icon": "🗺",
+          "title": "Persiapan KKL",
+          "desc": "Cari info jadwal KKL jurusan, koordinasi dengan angkatan",
+          "type": "core",
+          "tags": ["Akademik"],
+          "paths": ["all"]
+        }
+      ]
+    },
+    {
+      "id": "sem-4",
+      "label": "Semester 4",
+      "period": "Feb – Jul",
+      "description": "Syarat akademik & pengembangan diri",
+      "dotType": "default",
+      "nodes": [
+        {
+          "id": "n-kkl",
+          "icon": "🚌",
+          "title": "KKL (Kuliah Kerja Lapangan)",
+          "desc": "Praktik langsung di perpustakaan, arsip, atau lembaga informasi",
+          "type": "core",
+          "tags": ["Wajib"],
+          "paths": ["all"]
+        },
+        {
+          "id": "n-outline",
+          "icon": "📝",
+          "title": "Buat Outline Proposal",
+          "desc": "Draft awal judul & bab 1 skripsi untuk konsultasi ke dosen",
+          "type": "optional",
+          "tags": ["Riset"],
+          "paths": ["sempro", "target35"]
+        },
+        {
+          "id": "n-volunteering",
+          "icon": "🙋",
+          "title": "Volunteering / Magang Informal",
+          "desc": "Bantu di perpustakaan kampus atau komunitas literasi",
+          "type": "optional",
+          "tags": ["Portofolio"],
+          "paths": ["kupukupu", "ipk"]
+        },
+        {
+          "id": "n-bahasa",
+          "icon": "🌐",
+          "title": "Tingkatkan Kemampuan Bahasa",
+          "desc": "Toefl/IELTS preparation atau kelas bahasa Arab untuk referensi keislaman",
+          "type": "optional",
+          "tags": ["Soft skill"],
+          "paths": ["ipk", "target35"]
+        }
+      ]
+    },
+    {
+      "id": "sem-5",
+      "label": "Semester 5",
+      "period": "Agus – Jan",
+      "description": "Proposal & persiapan tugas akhir",
+      "dotType": "default",
+      "nodes": [
+        {
+          "id": "n-proposal",
+          "icon": "📄",
+          "title": "Susun Proposal Skripsi",
+          "desc": "Bab 1–3 lengkap: latar belakang, rumusan, metodologi",
+          "type": "core",
+          "tags": ["Skripsi"],
+          "paths": ["all"]
+        },
+        {
+          "id": "n-konsul-dosen",
+          "icon": "🧑‍🏫",
+          "title": "Konsultasi Dosen Pembimbing",
+          "desc": "Tentukan dosen pembimbing dan mulai rutinitas bimbingan",
+          "type": "core",
+          "tags": ["Skripsi"],
+          "paths": ["all"]
+        },
+        {
+          "id": "n-ketua-bem",
+          "icon": "🎖",
+          "title": "Kandidat Ketua / Sekretaris",
+          "desc": "Maju ke posisi strategis di BEM atau HMJ",
+          "type": "optional",
+          "tags": ["Leadership"],
+          "paths": ["organisatoris"]
+        },
+        {
+          "id": "n-review-ipk",
+          "icon": "📈",
+          "title": "Review IPK — Kritis",
+          "desc": "Pastikan IPK ≥ 3.50. Jika belum, susun strategi semester ini",
+          "type": "milestone",
+          "tags": ["IPK"],
+          "paths": ["ipk", "target35"]
+        }
+      ]
+    },
+    {
+      "id": "sem-6",
+      "label": "Semester 6",
+      "period": "Feb – Jul",
+      "description": "Seminar Proposal & KKN",
+      "dotType": "milestone",
+      "nodes": [
+        {
+          "id": "n-sempro",
+          "icon": "🎤",
+          "title": "Seminar Proposal (Sempro)",
+          "desc": "Presentasi dan ujian proposal skripsi di hadapan dosen penguji",
+          "type": "milestone",
+          "tags": ["Kritis"],
+          "paths": ["all"]
+        },
+        {
+          "id": "n-kkn",
+          "icon": "🏘",
+          "title": "KKN (Kuliah Kerja Nyata)",
+          "desc": "Program pengabdian masyarakat — biasanya bersamaan dengan bab 4–5",
+          "type": "core",
+          "tags": ["Wajib"],
+          "paths": ["all"]
+        },
+        {
+          "id": "n-data-skripsi",
+          "icon": "🔬",
+          "title": "Pengumpulan Data Skripsi",
+          "desc": "Wawancara, observasi, kuesioner, atau analisis dokumen",
+          "type": "core",
+          "tags": ["Skripsi"],
+          "paths": ["all"]
+        },
+        {
+          "id": "n-early-sempro",
+          "icon": "⚡",
+          "title": "Sempro Lebih Awal (Sem 5)",
+          "desc": "Khusus jalur Sempro Cepat & Target 3.5 — upayakan di sem 5",
+          "type": "optional",
+          "tags": ["Fast-track"],
+          "paths": ["sempro", "target35"]
+        }
+      ]
+    },
+    {
+      "id": "sem-7",
+      "label": "Semester 7",
+      "period": "Agus – Jan",
+      "description": "Penulisan & penyelesaian skripsi",
+      "dotType": "default",
+      "nodes": [
+        {
+          "id": "n-bab45",
+          "icon": "✍️",
+          "title": "Selesaikan Bab 4 & 5",
+          "desc": "Analisis data, pembahasan, kesimpulan, dan saran",
+          "type": "core",
+          "tags": ["Skripsi"],
+          "paths": ["all"]
+        },
+        {
+          "id": "n-revisi",
+          "icon": "🔁",
+          "title": "Revisi & Perbaikan Draf",
+          "desc": "Siklus bimbingan intensif dengan dosen pembimbing",
+          "type": "core",
+          "tags": ["Skripsi"],
+          "paths": ["all"]
+        },
+        {
+          "id": "n-syarat-sidang",
+          "icon": "📋",
+          "title": "Penuhi Syarat Administrasi Sidang",
+          "desc": "Cek bebas tanggungan, nilai matkul, sertifikat wajib kampus",
+          "type": "core",
+          "tags": ["Administrasi"],
+          "paths": ["all"]
+        },
+        {
+          "id": "n-portofolio",
+          "icon": "💼",
+          "title": "Susun Portofolio & CV",
+          "desc": "Persiapkan diri untuk dunia kerja setelah wisuda",
+          "type": "optional",
+          "tags": ["Karir"],
+          "paths": ["kupukupu", "ipk"]
+        }
+      ]
+    },
+    {
+      "id": "sem-8",
+      "label": "Semester 8",
+      "period": "Feb – Jul",
+      "description": "Sidang & wisuda 🎓",
+      "dotType": "milestone",
+      "nodes": [
+        {
+          "id": "n-sidang",
+          "icon": "🎓",
+          "title": "Sidang Skripsi / Munaqosah",
+          "desc": "Ujian akhir skripsi di hadapan tim penguji. Ini garis finishmu!",
+          "type": "milestone",
+          "tags": ["Kritis"],
+          "paths": ["all"]
+        },
+        {
+          "id": "n-revisi-akhir",
+          "icon": "✅",
+          "title": "Revisi Pasca-Sidang",
+          "desc": "Perbaikan skripsi sesuai catatan penguji dan persetujuan dosen",
+          "type": "core",
+          "tags": ["Skripsi"],
+          "paths": ["all"]
+        },
+        {
+          "id": "n-wisuda",
+          "icon": "🏆",
+          "title": "Wisuda",
+          "desc": "Selesai! Rayakan jerih payah 3.5–4 tahun perjalananmu",
+          "type": "milestone",
+          "tags": ["Finish"],
+          "paths": ["all"]
+        },
+        {
+          "id": "n-alumni",
+          "icon": "🌱",
+          "title": "Bergabung Komunitas Alumni",
+          "desc": "Tetap terhubung dengan jurusan dan kontribusi ke adik tingkat",
+          "type": "optional",
+          "tags": ["Networking"],
+          "paths": ["all"]
+        }
+      ]
+    }
+  ]
+}

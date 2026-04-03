@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "title": "Langkah IPII — Jalur Target 35",
+    "description": "Roadmap untuk mahasiswa fokus pada kelulusan dalam 7 semester",
+    "path": "target35",
+    "version": "1.0"
+  },
+  "semesters": [
+    {
+      "id": "sem-1",
+      "label": "Semester 1",
+      "period": "Agus – Jan",
+      "description": "Orientasi & adaptasi kehidupan kampus",
+      "dotType": "default",
+      "nodes": [
+        {
+          "id": "n-template-1",
+          "icon": "📝",
+          "title": "TODO: Isi judul node",
+          "desc": "TODO: Isi deskripsi singkat",
+          "action": "TODO: Isi saran aksi",
+          "resources": [],
+          "type": "core",
+          "tags": ["TODO"],
+          "paths": ["target35"]
+        }
+      ]
+    },
+    {
+      "id": "sem-2",
+      "label": "Semester 2",
+      "period": "Feb – Jul",
+      "description": "TODO: Isi deskripsi semester",
+      "dotType": "default",
+      "nodes": [
+        {
+          "id": "n-template-2",
+          "icon": "📝",
+          "title": "TODO: Isi judul node",
+          "desc": "TODO: Isi deskripsi singkat",
+          "action": "TODO: Isi saran aksi",
+          "resources": [],
+          "type": "core",
+          "tags": ["TODO"],
+          "paths": ["target35"]
+        }
+      ]
+    }
+  ]
+}

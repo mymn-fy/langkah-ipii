@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Peta perjalanan akademik mahasiswa Ilmu Perpustakaan dan Informasi Islam — dari semester 1 hingga wisuda." />
+  <meta property="og:title" content="Langkah IPII — Roadmap Mahasiswa" />
+  <meta property="og:description" content="Pilih jalurmu: Organisatoris, Fokus IPK, Sempro Cepat, Kupu-kupu, atau Target 3.5 Tahun." />
+  <title>Langkah IPII — Roadmap Mahasiswa Ilmu Perpustakaan</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/layout.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+</head>
+<body>
+
+  <!-- ========= NAV ========= -->
+  <nav class="nav" role="navigation" aria-label="Navigasi utama">
+    <div class="container nav__inner">
+
+      <!-- Logo -->
+      <a href="#" class="nav__logo" aria-label="Langkah IPII — Beranda">
+        <div class="nav__logo-icon" aria-hidden="true">
+          <!-- Icon: book / path -->
+          <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 2h8a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1zm1 3h6M4 8h4M4 11h3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+          </svg>
+        </div>
+        <span class="nav__logo-text">Langkah <strong>IPII</strong></span>
+      </a>
+
+      <!-- Actions -->
+      <div class="nav__actions">
+        <span class="badge badge--version">v1.0</span>
+        <button class="btn btn--ghost" id="theme-toggle" aria-label="Toggle tema gelap/terang" title="Ganti tema">
+          <!-- Moon icon (untuk switch ke dark) -->
+          <svg class="theme-icon-moon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+            <path d="M12 9A6 6 0 1 1 7 4a4 4 0 0 0 5 5z"/>
+          </svg>
+          <!-- Sun icon (untuk switch ke light) -->
+          <svg class="theme-icon-sun" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+            <circle cx="8" cy="8" r="3"/>
+            <path d="M8 1v1M8 14v1M1 8h1M14 8h1M3 3l.7.7M12.3 12.3l.7.7M12.3 3.7L13 3M3 13l.7-.7"/>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </nav>
+
+
+  <!-- ========= HERO ========= -->
+  <header class="hero">
+    <div class="container">
+      <p class="hero__eyebrow">Roadmap Akademik · Ilmu Perpustakaan &amp; Informasi Islam</p>
+
+      <h1 class="hero__title">
+        Peta Perjalanan<br>
+        Hidup Mahasiswa <em>IPII</em>
+      </h1>
+
+      <p class="hero__sub">
+        Dari maba hingga wisuda — pilih jalurmu, ikuti milestone-nya.
+        Setiap semester ada langkah yang harus kamu capai.
+      </p>
+
+      <div class="hero__stats" aria-label="Statistik roadmap">
+        <div class="stat">
+          <span class="stat__num">8</span>
+          <span class="stat__label">Semester</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">5</span>
+          <span class="stat__label">Jalur</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">30+</span>
+          <span class="stat__label">Milestone</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">3.5th</span>
+          <span class="stat__label">Target Min.</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- ========= PATH SELECTOR (TABS) ========= -->
+  <section class="path-selector" aria-label="Pilih jalur mahasiswa">
+    <div class="container">
+      <p class="section-label">Pilih jalurmu</p>
+
+      <div class="tabs" id="path-tabs" role="tablist" aria-label="Jalur mahasiswa IPII">
+        <button class="tab tab--active" data-path="all"           role="tab" aria-selected="true">
+          Semua Jalur
+        </button>
+        <button class="tab" data-path="organisatoris"             role="tab" aria-selected="false">
+          Organisatoris
+        </button>
+        <button class="tab" data-path="ipk"                       role="tab" aria-selected="false">
+          Fokus IPK
+        </button>
+        <button class="tab" data-path="sempro"                    role="tab" aria-selected="false">
+          Sempro Cepat
+        </button>
+        <button class="tab" data-path="kupukupu"                  role="tab" aria-selected="false">
+          Kupu-kupu
+        </button>
+        <button class="tab" data-path="target35"                  role="tab" aria-selected="false">
+          Target 3.5 Tahun
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========= ROADMAP ========= -->
+  <main class="roadmap-section" id="roadmap-section">
+    <div class="container">
+
+      <!-- Roadmap dirender oleh roadmap.js -->
+      <div class="roadmap" id="roadmap" role="region" aria-label="Roadmap semester">
+        <!-- Loading state -->
+        <div class="empty-state">
+          <div class="empty-state__icon">⏳</div>
+          <div class="empty-state__text">Memuat roadmap...</div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ========= NODE DETAIL SIDEBAR ========= -->
+  <aside class="sidebar sidebar--nodeDetail" id="node-detail-sidebar" role="complementary" aria-label="Detail node">
+    <div class="sidebar__header">
+      <h2 class="sidebar__title" id="sidebar-title">Detail Node</h2>
+      <button class="sidebar__close" id="sidebar-close" aria-label="Tutup sidebar">×</button>
+    </div>
+    <div class="sidebar__content" id="sidebar-content">
+      <!-- Content diisi oleh JavaScript -->
+    </div>
+  </aside>
+
+  <!-- Sidebar Overlay -->
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+
+  <!-- ========= FOOTER ========= -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__copy">
+        &copy; 2025 Langkah IPII &mdash; Dibuat dengan 💚 untuk mahasiswa perpustakaan Indonesia
+      </p>
+      <nav class="footer__links" aria-label="Footer links">
+        <a href="#roadmap-section">Roadmap</a>
+        <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </div>
+  </footer>
+
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-top" id="scroll-top" aria-label="Kembali ke atas" title="Scroll ke atas">
+    ↑
+  </button>
+
+
+  <!-- JS (urutan penting!) -->
+  <script src="assets/js/roadmap.js"></script>
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>

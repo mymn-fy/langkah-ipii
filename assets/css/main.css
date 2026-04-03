@@ -1,0 +1,183 @@
+/* ============================================
+   main.css — Variables, Reset, Typography
+   Langkah IPII
+   ============================================ */
+
+/* --- Google Fonts Import --- */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap');
+
+/* --- CSS Variables (Light Mode) --- */
+:root {
+  /* Primary — Teal */
+  --color-primary:        #0F6E56;
+  --color-primary-dark:   #085041;
+  --color-primary-mid:    #1D9E75;
+  --color-primary-light:  #5DCAA5;
+  --color-primary-bg:     #E1F5EE;
+  --color-primary-pale:   #f0faf6;
+
+  /* Accent — Amber */
+  --color-accent:         #BA7517;
+  --color-accent-dark:    #633806;
+  --color-accent-light:   #EF9F27;
+  --color-accent-bg:      #FAEEDA;
+  --color-accent-pale:    #fdf6e8;
+
+  /* Neutrals */
+  --color-text:           #111827;
+  --color-text-muted:     #6B7280;
+  --color-text-faint:     #9CA3AF;
+  --color-border:         #E5E7EB;
+  --color-border-mid:     #D1D5DB;
+  --color-bg:             #FFFFFF;
+  --color-bg-secondary:   #F9FAFB;
+  --color-bg-tertiary:    #F3F4F6;
+
+  /* Status */
+  --color-done-bg:        #E1F5EE;
+  --color-done-border:    #5DCAA5;
+  --color-done-text:      #085041;
+
+  /* Typography */
+  --font-display:  'Fraunces', Georgia, serif;
+  --font-body:     'Plus Jakarta Sans', system-ui, sans-serif;
+
+  /* Sizing */
+  --radius-sm:     6px;
+  --radius-md:     10px;
+  --radius-lg:     14px;
+  --radius-xl:     20px;
+  --radius-pill:   999px;
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+
+  /* Transitions */
+  --transition: 0.18s ease;
+
+  /* Nav height (for sticky offset) */
+  --nav-height: 60px;
+}
+
+/* --- Dark Mode Variables --- */
+[data-theme="dark"] {
+  --color-primary:        #1D9E75;
+  --color-primary-dark:   #5DCAA5;
+  --color-primary-mid:    #5DCAA5;
+  --color-primary-light:  #9FE1CB;
+  --color-primary-bg:     #0a2a20;
+  --color-primary-pale:   #071a14;
+
+  --color-accent:         #EF9F27;
+  --color-accent-dark:    #FAC775;
+  --color-accent-light:   #FAC775;
+  --color-accent-bg:      #2a1e07;
+  --color-accent-pale:    #1a1204;
+
+  --color-text:           #F3F4F6;
+  --color-text-muted:     #9CA3AF;
+  --color-text-faint:     #6B7280;
+  --color-border:         #1F2937;
+  --color-border-mid:     #374151;
+  --color-bg:             #0F1117;
+  --color-bg-secondary:   #161B27;
+  --color-bg-tertiary:    #1F2937;
+
+  --color-done-bg:        #0a2a20;
+  --color-done-border:    #1D9E75;
+  --color-done-text:      #9FE1CB;
+}
+
+/* --- Reset --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  transition: background-color var(--transition), color var(--transition);
+  overflow-x: hidden;
+}
+
+img, svg {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* --- Typography Scale --- */
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--color-text);
+}
+
+h1 { font-size: clamp(28px, 5vw, 44px); }
+h2 { font-size: clamp(22px, 3.5vw, 32px); }
+h3 { font-size: clamp(17px, 2.5vw, 22px); }
+h4 { font-size: 16px; }
+
+em {
+  font-style: italic;
+  color: var(--color-primary);
+}
+
+p {
+  margin-bottom: 0;
+}
+
+/* --- Utility Classes --- */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.text-muted   { color: var(--color-text-muted); }
+.text-primary { color: var(--color-primary); }
+.text-accent  { color: var(--color-accent); }
+
+.mt-1 { margin-top: var(--space-1); }
+.mt-2 { margin-top: var(--space-2); }
+.mt-3 { margin-top: var(--space-3); }
+.mt-4 { margin-top: var(--space-4); }
