@@ -28,8 +28,8 @@
       <a href="#" class="nav__logo" aria-label="Langkah IPII — Beranda">
         <div class="nav__logo-icon" aria-hidden="true">
           <!-- Icon: book / path -->
-          <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-            <path d="M3 2h8a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1zm1 3h6M4 8h4M4 11h3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+          <svg viewBox="0 0 16 16" width="24" height="24" xmlns="http://www.w3.org/2000/svg" style="color: #ffffff;">
+            <path d="M3 2h8a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1zm1 3h6M4 8h4M4 11h3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
           </svg>
         </div>
         <span class="nav__logo-text">Langkah <strong>IPII</strong></span>
@@ -37,16 +37,16 @@
 
       <!-- Actions -->
       <div class="nav__actions">
-        <span class="badge badge--version">v1.0</span>
+        <span class="badge badge--version">v1.1</span>
         <button class="btn btn--ghost" id="theme-toggle" aria-label="Toggle tema gelap/terang" title="Ganti tema">
           <!-- Moon icon (untuk switch ke dark) -->
-          <svg class="theme-icon-moon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
-            <path d="M12 9A6 6 0 1 1 7 4a4 4 0 0 0 5 5z"/>
+          <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>
           </svg>
           <!-- Sun icon (untuk switch ke light) -->
-          <svg class="theme-icon-sun" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
-            <circle cx="8" cy="8" r="3"/>
-            <path d="M8 1v1M8 14v1M1 8h1M14 8h1M3 3l.7.7M12.3 12.3l.7.7M12.3 3.7L13 3M3 13l.7-.7"/>
+          <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
           </svg>
         </button>
       </div>
@@ -97,10 +97,7 @@
     <div class="container">
       <p class="section-label">Pilih jalurmu</p>
 
-      <div class="tabs" id="path-tabs" role="tablist" aria-label="Jalur mahasiswa IPII">
-        <button class="tab tab--active" data-path="all"           role="tab" aria-selected="true">
-          Semua Jalur
-        </button>
+      <div class="tabs container-jalur" id="path-tabs" role="tablist" aria-label="Jalur mahasiswa IPII">
         <button class="tab" data-path="organisatoris"             role="tab" aria-selected="false">
           Organisatoris
         </button>
@@ -130,8 +127,8 @@
       <div class="roadmap" id="roadmap" role="region" aria-label="Roadmap semester">
         <!-- Loading state -->
         <div class="empty-state">
-          <div class="empty-state__icon">⏳</div>
-          <div class="empty-state__text">Memuat roadmap...</div>
+          <div class="empty-state__icon">👆</div>
+          <div class="empty-state__text">Silakan pilih salah satu jalur di atas untuk menampilkan detail roadmap.</div>
         </div>
       </div>
 
@@ -142,7 +139,12 @@
   <aside class="sidebar sidebar--nodeDetail" id="node-detail-sidebar" role="complementary" aria-label="Detail node">
     <div class="sidebar__header">
       <h2 class="sidebar__title" id="sidebar-title">Detail Node</h2>
-      <button class="sidebar__close" id="sidebar-close" aria-label="Tutup sidebar">×</button>
+      <button class="sidebar__close" id="sidebar-close" aria-label="Tutup sidebar" style="display: flex; align-items: center; justify-content: center; padding: 0;">
+        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
     </div>
     <div class="sidebar__content" id="sidebar-content">
       <!-- Content diisi oleh JavaScript -->
@@ -157,12 +159,8 @@
   <footer class="footer">
     <div class="container footer__inner">
       <p class="footer__copy">
-        &copy; 2025 Langkah IPII &mdash; Dibuat dengan 💚 untuk mahasiswa perpustakaan Indonesia
+        &copy; 2026 Langkah IPII &mdash; Dibuat dengan 💚 untuk mahasiswa IPII
       </p>
-      <nav class="footer__links" aria-label="Footer links">
-        <a href="#roadmap-section">Roadmap</a>
-        <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
-      </nav>
     </div>
   </footer>
 

@@ -23,6 +23,17 @@
           "type": "core",
           "tags": ["TODO"],
           "paths": ["sempro"]
+        },
+        {
+          "id": "n-template-1-2",
+          "icon": "📌",
+          "title": "TODO: Isi judul node kedua",
+          "desc": "TODO: Isi deskripsi singkat untuk node kedua",
+          "action": "TODO: Isi saran aksi",
+          "resources": [],
+          "type": "optional",
+          "tags": ["TODO"],
+          "paths": ["sempro"]
         }
       ]
     },

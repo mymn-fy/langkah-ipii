@@ -5,7 +5,7 @@
 
 const TabManager = (() => {
 
-  let activePath = 'all';
+  let activePath = null;
   let onChangeFn = null;
 
   /**

@@ -144,7 +144,8 @@ const RoadmapRenderer = (() => {
       roadmapHTML += `<div class="semester-row">${rail}${block}</div>`;
     });
 
-    roadmapEl.innerHTML = roadmapHTML;
+    // Bungkus semua konten roadmap dengan efek animasi fade-in
+    roadmapEl.innerHTML = `<div class="animate-fade-in">${roadmapHTML}</div>`;
   }
 
   /**

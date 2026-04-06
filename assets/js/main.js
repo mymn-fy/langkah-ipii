@@ -40,9 +40,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // Sidebar management
   initSidebar();
 
-  // Fetch Roadmap Data awal
-  loadRoadmapForPath('all');
-
   // Init tab manager dengan callback untuk load path-specific JSON
   TabManager.init((path) => {
     loadRoadmapForPath(path);

@@ -93,6 +93,10 @@
   scrollbar-width: none;
   -ms-overflow-style: none;
   padding-bottom: 1px;
+  flex-wrap: nowrap;
+  width: 100%;
+  max-width: 100%;
+  -webkit-overflow-scrolling: touch;
 }
 
 .tabs::-webkit-scrollbar {
@@ -100,7 +104,7 @@
 }
 
 .tab {
-  flex-shrink: 0;
+  flex: 0 0 auto;
   padding: 7px 14px;
   border-radius: var(--radius-pill);
   font-size: 13px;
@@ -607,4 +611,29 @@
   .sidebar {
     max-width: 100%;
   }
+}
+
+.container-jalur {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: left;
+}
+
+/* ===========================
+   ANIMATIONS
+   =========================== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeInUp 0.5s ease-out forwards;
 }
