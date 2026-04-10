@@ -1,58 +1,171 @@
 {
   "meta": {
     "title": "Langkah IPII — Jalur Sempro",
-    "description": "Roadmap untuk mahasiswa fokus pada riset dan seminar proposal cepat",
+    "description": "Panduan langkah-demi-langkah interaktif untuk mahasiswa IPII dalam menyelesaikan Seminar Proposal (Sempro) mulai dari persiapan hingga pasca-seminar.",
     "path": "sempro",
     "version": "1.0"
   },
   "semesters": [
     {
-      "id": "sem-1",
-      "label": "Semester 1",
+      "id": "sem-5",
+      "label": "Semester 5",
       "period": "Agus – Jan",
-      "description": "Orientasi & adaptasi kehidupan kampus",
+      "description": "Fokus pada penguatan fondasi riset melalui mata kuliah Metodologi Penelitian.",
       "dotType": "default",
       "nodes": [
         {
-          "id": "n-template-1",
-          "icon": "📝",
-          "title": "TODO: Isi judul node",
-          "desc": "TODO: Isi deskripsi singkat",
-          "action": "TODO: Isi saran aksi",
-          "resources": [],
+          "id": "n-early-start",
+          "icon": "💡",
+          "title": "Manfaatkan Mata Kuliah Metopen",
+          "desc": "Jadikan tugas akhir mata kuliah Metodologi Penelitian sebagai fondasi kokoh untuk proposal skripsi.",
+          "action": "Eksplorasi topik yang diminati dan susun draf proposal serapi mungkin.",
+          "resources": [
+            {
+              "name": "Contoh Draf Proposal Metopen",
+              "url": "https://docs.google.com/document/d/1c2aZyNa_vFCW8Tmj8L-73aWm-n4F1UT2/edit"
+            }
+          ],
           "type": "core",
-          "tags": ["TODO"],
-          "paths": ["sempro"]
-        },
-        {
-          "id": "n-template-1-2",
-          "icon": "📌",
-          "title": "TODO: Isi judul node kedua",
-          "desc": "TODO: Isi deskripsi singkat untuk node kedua",
-          "action": "TODO: Isi saran aksi",
-          "resources": [],
-          "type": "optional",
-          "tags": ["TODO"],
+          "tags": ["Persiapan", "Metopen"],
           "paths": ["sempro"]
         }
       ]
     },
     {
-      "id": "sem-2",
-      "label": "Semester 2",
+      "id": "sem-6",
+      "label": "Semester 6",
       "period": "Feb – Jul",
-      "description": "TODO: Isi deskripsi semester",
+      "description": "Tahap eksekusi administrasi dan pelaksanaan Seminar Proposal.",
       "dotType": "default",
       "nodes": [
         {
-          "id": "n-template-2",
-          "icon": "📝",
-          "title": "TODO: Isi judul node",
-          "desc": "TODO: Isi deskripsi singkat",
-          "action": "TODO: Isi saran aksi",
+          "id": "n-tahap-1",
+          "icon": "✅",
+          "title": "Acc Pembimbing & Cek Plagiasi",
+          "desc": "Bimbingan intensif dan memastikan orisinalitas naskah (Maksimal 25% plagiasi).",
+          "action": "Lakukan cek plagiasi mandiri sebelum mengajukan dokumen resmi.",
           "resources": [],
           "type": "core",
-          "tags": ["TODO"],
+          "tags": ["Bimbingan", "Plagiasi"],
+          "paths": ["sempro"]
+        },
+        {
+          "id": "n-tahap-2",
+          "icon": "📄",
+          "title": "Surat Persetujuan Naskah",
+          "desc": "Legalitas naskah proposal sebagai bukti siap untuk disidangkan.",
+          "action": "Siapkan tanda tangan (basah/kering) sesuai ketentuan dosen.",
+          "resources": [
+            {
+              "name": "Download Template Surat Persetujuan",
+              "url": "https://docs.google.com/document/d/1_lN8sJMqL_ShV8mKzMINJtaHBMG94Htb/edit"
+            }
+          ],
+          "type": "core",
+          "tags": ["Administrasi"],
+          "paths": ["sempro"]
+        },
+        {
+          "id": "n-tahap-3",
+          "icon": "📤",
+          "title": "Submit Proposal ke Prodi",
+          "desc": "Pengajuan berkas (KTM, KHS 1-5, Surat Persetujuan) melalui link resmi Prodi.",
+          "action": "Kumpulkan semua berkas dalam format PDF sebelum mengisi formulir.",
+          "resources": [
+            {
+              "name": "Link Google Form Prodi",
+              "url": "https://docs.google.com/forms/d/e/1FAIpQLSeRvu-guJF-FpKV2ks2KD3CBI4AphM2ixIvBLP7dckNrei3zw/viewform"
+            }
+          ],
+          "type": "core",
+          "tags": ["Pendaftaran"],
+          "paths": ["sempro"]
+        },
+        {
+          "id": "n-tahap-4-5",
+          "icon": "📅",
+          "title": "Hasil Sidang & SK Pembimbing",
+          "desc": "Pengumuman kelayakan judul dari rapat pleno Prodi dan penerbitan SK resmi.",
+          "action": "Segera revisi jika ada catatan dan simpan SK Pembimbing sebagai bukti legalitas.",
+          "resources": [
+            {
+              "name": "Contoh Hasil Rapat Sidang",
+              "url": "https://drive.google.com/file/d/1lzAb7PRtfbRkYWImL9icebfv9llqsSJx/view"
+            },
+            {
+              "name": "Contoh SK Pembimbing",
+              "url": "https://drive.google.com/file/d/1jk2FI6Xqm3Vumm2HKxsbw0G0QO_Tmqq_/view"
+            }
+          ],
+          "type": "core",
+          "tags": ["Pengumuman", "SK"],
+          "paths": ["sempro"]
+        },
+        {
+          "id": "n-tahap-6",
+          "icon": "🏛️",
+          "title": "Persiapan Logistik Sempro",
+          "desc": "Pendaftaran jadwal, peminjaman tempat di SALAM UIN, dan penentuan moderator/penanggap.",
+          "action": "Isi form di portal SALAM dan hubungi Pak Alfin untuk konfirmasi.",
+          "resources": [
+            {
+              "name": "Portal SALAM UIN",
+              "url": "https://salam.uin-antasari.ac.id/"
+            },
+            {
+              "name": "Kontak Pak Alfin (WA)",
+              "url": "https://wa.me/6282175526698"
+            }
+          ],
+          "type": "core",
+          "tags": ["Logistik", "SALAM"],
+          "paths": ["sempro"]
+        },
+        {
+          "id": "n-tahap-7",
+          "icon": "📩",
+          "title": "Distribusi Undangan",
+          "desc": "Penyampaian undangan ke dosen pembimbing dan penyerahan surat izin lokal ke bagian Mikwa.",
+          "action": "Gunakan bahasa yang sopan saat menghubungi pihak terkait (Contoh: Pak Khairul Puadi).",
+          "resources": [
+            {
+              "name": "Kontak Pak Khairul Puadi (WA)",
+              "url": "https://wa.me/6282251362084"
+            }
+          ],
+          "type": "core",
+          "tags": ["Koordinasi"],
+          "paths": ["sempro"]
+        },
+        {
+          "id": "n-tahap-8",
+          "icon": "📋",
+          "title": "Final Check Berkas Hari H",
+          "desc": "Persiapan Proposal (2 jilid), Berita Acara, Catatan Sempro, dan PPT Presentasi.",
+          "action": "Pastikan semua dokumen fisik dan digital (PPT) sudah siap sebelum masuk ruangan.",
+          "resources": [
+            {
+              "name": "Template Berita Acara & Catatan",
+              "url": "https://docs.google.com/document/d/1EqESVsYmlFwFhkZcuMKl6k83jaJXer7n/edit"
+            },
+            {
+              "name": "Template Naskah Moderator",
+              "url": "https://docs.google.com/document/d/14t6RT8dvvhst7ZEz5SnZ4-sPzpEv-8-B/edit"
+            }
+          ],
+          "type": "core",
+          "tags": ["Hari H", "Dokumen"],
+          "paths": ["sempro"]
+        },
+        {
+          "id": "n-final",
+          "icon": "🚀",
+          "title": "Pasca Seminar & Revisi",
+          "desc": "Melakukan perbaikan naskah berdasarkan masukan penguji.",
+          "action": "Segera selesaikan revisi agar bisa lanjut ke tahap penelitian lapangan.",
+          "resources": [],
+          "type": "core",
+          "tags": ["Next Step"],
           "paths": ["sempro"]
         }
       ]
